@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@import url('https://db.onlinewebfonts.com/c/514b5e60c47856ffef9c57fd23203b89?family=SolanoGothicMVB-Bd');
+
+:root{
+    --cor00: #b99dbe ;
+    --cor01: #923CA1;
+    --cor02: #672e8c;
+    --cor03: #321659;
+    --cor04: #230f40;
+    --cor05: #180226;
+
+    --fontePadrao: Arial, 'sans serif';
+    --fonteDestaque:"SolanoGothicMVB-Bd";
+
+}
+
+*{
+    margin:0px;
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+body{
+    background-color: var(--cor00);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor02), var(--cor03), var(--cor04));
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    font-family: var(--fonteDestaque);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+main{
+    background-color: white;
+    max-width: 800px;
+    min-width: 300px;
+    padding: 20px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+main h1, h2{
+    font-family: var(--fonteDestaque);
+    font-size: 2em;
+    padding-bottom: 10px;
+    color: #180226;
+}
+ main p{
+    font-family: var(--fontePadrao);
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+ }
+
+ main strong{
+    color: var(--cor04);
+ }
+
+ a{
+    text-decoration: none;
+    color: black;
+    background-color: var(--cor00);
+    padding: 3px;
+    border-radius: 5px;
+ }
+ main a:hover{
+    background-color: var(--cor02);
+ }
+
+ img{
+    margin: auto;
+    display: block;
+ }
+ img.pequeno{
+    max-width: 350px;
+ }
+
+aside{
+    background-color: #cebbd1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+aside h2{
+    background-image: linear-gradient(to bottom, var(--cor02), var(--cor03), var(--cor04));
+    color: white;
+    margin: -20px -20px 0px -20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+h2{
+    padding: 5px
+}
+
+
+div.video{
+    background-color: var(--cor01);
+    padding: 20px;
+    padding-bottom: 50%;
+    margin: 0px -20px 30px -20px;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer{
+    background-color: var(--cor05);
+    color: white;
+    text-align: center;
+    font-family: var(--fontePadrao);
+    padding: 5px;
+}
+strong.footer{
+    color: var(--cor00);
+}
